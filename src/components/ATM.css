@@ -1,0 +1,99 @@
+.account-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.account-title {
+  font-size: 22px;
+  color: #222;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 300px;    
+}
+
+.balance {
+  border-radius: 10px;
+  padding: 12px;
+  background: linear-gradient(90deg, #f28c20, #f0a040);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input-field {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e4e7eb;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #f28c20;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.08s ease, background-color 0.12s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background-color: #e67600;
+}
+
+.history {
+  border-radius: 8px;
+  border: 1px solid #eef0f3;
+  padding: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+  background: #ffffff;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 6px;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: center;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.logout-button {
+  background-color: #e24a4a;
+}
+
+.logout-button:hover {
+  background-color: #c43b3b;
+}
+
+.error-message {
+  color: #c43b3b;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
